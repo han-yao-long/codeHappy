@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    //语法编译为es5语法
+    "target": "es2015",
+    //模块采用import语法且不作转换，转换工作交给gulp任务中的webpack2
+    "module": "UMD",
+    //用NPM模式加载
+    "moduleResolution": "node",
+    //对于没有Export的库进行兼容
+    "allowSyntheticDefaultImports": true,
+    //开启修饰器模式
+    "experimentalDecorators": true,
+    //识别基本的系统类库
+    "lib": [ "dom", "es5", "es2015", "es2015.promise" ],
+    "strict": false
+  },
+  "include": [ "./" ]
+}
